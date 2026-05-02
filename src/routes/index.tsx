@@ -26,9 +26,68 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Plataforma elegante para psicanalistas gerenciarem agenda, pacientes, pagamentos e rotina com apoio de IA.",
+          "Plataforma elegante para psicanalistas gerenciarem agenda, pacientes, pagamentos e rotina com apoio de IA. Organize seu consultório sem perder a essência da clínica.",
       },
+      { name: "keywords", content: "psicanalista, gestão clínica, agenda psicanalista, controle financeiro, IA para psicanalistas, consultório virtual, Signa" },
+      { name: "author", content: "Signa" },
+      { name: "robots", content: "index, follow" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { property: "og:title", content: "Signa — Gestão clínica inteligente para psicanalistas" },
+      { property: "og:description", content: "Organize seu consultório sem perder a essência da clínica. Agenda, pacientes, financeiro e IA numa plataforma elegante." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://signa.app" },
+      { property: "og:image", content: "https://signa.app/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:locale", content: "pt_BR" },
+      { property: "og:site_name", content: "Signa" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Signa — Gestão clínica inteligente para psicanalistas" },
+      { name: "twitter:description", content: "Organize seu consultório sem perder a essência da clínica. Agenda, pacientes, financeiro e IA numa plataforma elegante." },
+      { name: "twitter:image", content: "https://signa.app/og-image.png" },
     ],
+    links: [
+      { rel: "canonical", href: "https://signa.app" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Signa",
+          "description": "Plataforma elegante para psicanalistas gerenciarem agenda, pacientes, pagamentos e rotina com apoio de IA.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "BRL",
+            "offerCount": "2",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Plano Mensal",
+                "price": "39.00",
+                "priceCurrency": "BRL"
+              },
+              {
+                "@type": "Offer",
+                "name": "Plano Anual",
+                "price": "298.80",
+                "priceCurrency": "BRL"
+              }
+            ]
+          },
+          "provider": {
+            "@type": "Organization",
+            "name": "Signa",
+            "url": "https://signa.app"
+          }
+        })
+      }
+    ]
   }),
 });
 
