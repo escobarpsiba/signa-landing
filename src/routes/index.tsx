@@ -286,21 +286,69 @@ function SignaLandingPage() {
       </section>
 
       <section id="preco" className="relative z-10 mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-2xl rounded-[2rem] border border-slate-200 bg-white/90 p-8 text-center shadow-2xl shadow-slate-900/10 dark:border-white/10 dark:bg-white/5 md:p-12">
+        <div className="text-center">
           <SectionLabel>Investimento</SectionLabel>
-          <h2 className="text-4xl font-semibold tracking-tight">Simples, direto e acessível.</h2>
-          <div className="mt-8 flex items-end justify-center gap-2">
-            <span className="text-6xl font-semibold tracking-tight">R$ 39</span>
-            <span className="pb-2 text-slate-500 dark:text-slate-400">/ mês</span>
-          </div>
-          <p className="mt-6 text-lg leading-8 text-slate-600 dark:text-slate-300">
-            Acesso à plataforma, agenda, pacientes, financeiro e assistente IA com uso limitado.
+          <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">Escolha o plano ideal para você.</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+            Comece hoje mesmo e transforme a gestão do seu consultório.
           </p>
-          <div className="mt-8">
-            <CTAButton>Quero aderir à Signa</CTAButton>
-          </div>
-          <p className="mt-5 text-sm text-slate-500 dark:text-slate-400">Pagamento mensal por Pix. Sem taxas escondidas.</p>
         </div>
+        <div className="mt-16 grid gap-8 md:grid-cols-2 md:items-end">
+          <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-8 text-center shadow-xl shadow-slate-900/5 dark:border-white/10 dark:bg-white/5 md:p-10">
+            <h3 className="text-xl font-semibold">Plano Mensal</h3>
+            <div className="mt-6 flex items-end justify-center gap-2">
+              <span className="text-6xl font-semibold tracking-tight">R$ 39</span>
+              <span className="pb-2 text-slate-500 dark:text-slate-400">/ mês</span>
+            </div>
+            <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">Cobrança mensal recorrente</p>
+            <ul className="mx-auto mt-8 space-y-3 text-left text-sm text-slate-600 dark:text-slate-300">
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Acesso à plataforma</li>
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Agenda e pacientes</li>
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Controle financeiro</li>
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Assistente IA (uso limitado)</li>
+            </ul>
+            <div className="mt-8">
+              <CTAButton>Quero o plano mensal</CTAButton>
+            </div>
+          </div>
+          <div className="relative rounded-[2rem] border-2 border-slate-950 bg-white p-8 text-center shadow-2xl shadow-slate-950/10 dark:border-white dark:bg-white md:p-10">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-slate-950 px-4 py-1 text-xs font-semibold text-white dark:bg-white dark:text-slate-950">
+              MAIS VANTAGEM
+            </div>
+            <h3 className="text-xl font-semibold">Plano Anual</h3>
+            <div className="mt-6 flex items-end justify-center gap-2">
+              <span className="text-6xl font-semibold tracking-tight">R$ 24,90</span>
+              <span className="pb-2 text-slate-500">/ mês</span>
+            </div>
+            <p className="mt-2 text-sm text-slate-500">R$ 298,80 cobrados anualmente</p>
+            <div className="mt-4 rounded-xl bg-green-50 p-3 dark:bg-green-900/20">
+              <p className="text-sm font-semibold text-green-700 dark:text-green-400">
+                Economize R$ 169,20 por ano
+              </p>
+              <p className="text-xs text-green-600 dark:text-green-500">
+                Você pagaria R$ 468,00 no plano mensal
+              </p>
+            </div>
+            <ul className="mx-auto mt-6 space-y-3 text-left text-sm text-slate-600 dark:text-slate-300">
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Acesso à plataforma</li>
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Agenda e pacientes</li>
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Controle financeiro</li>
+              <li className="flex items-center gap-2"><svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg> Assistente IA (uso limitado)</li>
+            </ul>
+            <div className="mt-8">
+              <a
+                href="https://wa.me/5575991512810?text=Olá,%20quero%20o%20plano%20anual%20da%20Signa"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-6 py-4 text-sm font-semibold text-white shadow-xl shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+              >
+                Quero o plano anual
+                <svg className="h-4 w-4 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p className="mt-10 text-center text-sm text-slate-500 dark:text-slate-400">
+          Pagamento via Pix ou cartão de crédito. Sem taxas escondidas.
+        </p>
       </section>
 
       <section className="relative z-10 mx-auto max-w-5xl px-6 py-20 lg:px-8">
