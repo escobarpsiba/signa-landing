@@ -94,12 +94,8 @@ function SignaLandingPage() {
       </div>
 
       <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-lg dark:bg-white dark:text-slate-950">S</div>
-          <div>
-            <p className="text-lg font-semibold tracking-tight">Signa</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400">Gestão clínica inteligente</p>
-          </div>
+        <div className="flex items-center">
+          <img src="/logo.png" alt="Signa" className="h-[90px] w-auto" />
         </div>
         <nav className="hidden items-center gap-8 text-sm text-slate-600 dark:text-slate-300 md:flex">
           <a href="#significado" className="hover:text-slate-950 dark:hover:text-white">O nome</a>
